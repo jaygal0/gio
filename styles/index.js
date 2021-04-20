@@ -1,31 +1,22 @@
 import styled, { keyframes } from 'styled-components'
 
-export const Container = styled.div`
-  margin: 3.2rem auto;
+export const MainContainer = styled.main`
+  margin: 1.6rem auto;
   margin-bottom: 9.6rem;
-  max-width: 128rem;
+  max-width: 144rem;
+
   @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
     margin-bottom: 4.8rem;
   }
   @media screen and (max-width: ${({ theme }) => theme.breakPoint.phone}) {
   }
 `
-export const GridContainer = styled.section`
+export const Container = styled.section`
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-column-gap: 3.2rem;
-  margin: 0 1.6rem;
-  &.align-center {
-    align-items: center;
-    margin: 7.2rem 1.6rem;
-  }
-  &.align-center-hero {
-    align-items: center;
-    margin: 7.2rem 1.6rem;
-  }
-  &.form-margin {
-    margin-top: 10.8rem;
-  }
+  margin: 0 1.6rem 9.6rem 1.6rem;
+
   @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
     grid-column-gap: 3.2rem;
   }

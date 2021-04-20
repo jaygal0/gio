@@ -12,16 +12,19 @@ body {
   font-size: 62.5%;
   font-weight: 400;
   letter-spacing: 0.05rem;
+  background: black;
 }
 main {
+  color: ${({ theme }) => theme.color.white};
 }
 h1 {
   font-size: ${({ theme }) => theme.font.desktop.h1};
   line-height: ${({ theme }) => theme.lineHeight.desktop.h1};
-  margin-top: ${({ theme }) => theme.margin.desktop.top};
-  color: ${({ theme }) => theme.color.black};
-  text-transform: capitalize;
-  font-weight: 900;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 9.6rem;
+  margin-bottom: 1.6rem;
+
   @media screen and (max-width: ${({ theme }) => theme.breakPoint.phoneLarge}) {
   font-size: ${({ theme }) => theme.font.phone.h1};
   line-height: ${({ theme }) => theme.lineHeight.phone.h1};
@@ -36,10 +39,9 @@ h1 {
 h2 {
   font-size: ${({ theme }) => theme.font.desktop.h2};
   line-height: ${({ theme }) => theme.lineHeight.desktop.h2};
-  text-transform: capitalize;
-  margin-bottom: ${({ theme }) => theme.margin.desktop.bottom};
-  color: ${({ theme }) => theme.color.lightGreen};
-  font-weight: 400;
+  text-transform: uppercase;
+  color: ${({ theme }) => theme.color.yellow};
+  font-weight: 700;
   
   @media screen and (max-width: ${({ theme }) => theme.breakPoint.phoneLarge}) {
   font-size: ${({ theme }) => theme.font.phone.h2};
@@ -47,11 +49,14 @@ h2 {
   margin-bottom: 1.6rem;
   }
 }
+
 h3 {
     font-size: ${({ theme }) => theme.font.desktop.h3};
     line-height: ${({ theme }) => theme.lineHeight.desktop.h3};
-    text-transform: capitalize;
-    font-weight: 900;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 1.6rem;
+    
   @media screen and (max-width: ${({ theme }) => theme.breakPoint.phoneLarge}) {
   font-size: ${({ theme }) => theme.font.phone.h3};
   line-height: ${({ theme }) => theme.lineHeight.phone.h3};

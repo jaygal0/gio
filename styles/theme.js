@@ -1,9 +1,10 @@
 export default {
   color: {
-    darkGreen: '#17453F',
+    yellow: '#EAED45',
     green: '#28786D',
     lightGreen: '#68C4B8',
     black: '#1C1C1C',
+    white: '#FFFFFF',
     grey: '#F5F5F5',
     line: '#E5E5E5',
   },
@@ -19,9 +20,9 @@ export default {
       meta: '1.2rem',
     },
     desktop: {
-      h1: '10.4rem',
+      h1: '6.4rem',
       h2: '4rem',
-      h3: '8rem',
+      h3: '2.4rem',
       h4: '3.6rem',
       h5: '2.4rem',
       h6: '1.6rem',
@@ -34,7 +35,7 @@ export default {
   },
   lineHeight: {
     phone: {
-      h1: '8.8rem',
+      h1: '7.2',
       h1Medium: '8rem',
       h2: '4rem',
       h3: '5.6rem',
@@ -44,9 +45,9 @@ export default {
       meta: '2rem',
     },
     desktop: {
-      h1: '11.2rem',
+      h1: '7.2rem',
       h2: '4.8rem',
-      h3: '8.8rem',
+      h3: '3.2rem',
       h4: '4rem',
       h5: '3.2rem',
       h6: '2.4rem',
