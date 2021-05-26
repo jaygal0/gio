@@ -1,25 +1,34 @@
 import Featured from '../components/Featured'
-import Title from '../components/Title'
 import Metadata from '../components/Metadata'
-import PreviousWork from '../components/PreviousWork'
-import Plan from '../components/Plan'
+import Portfolio from '../components/Portfolio'
 import Hero from '../components/Hero'
-import Action from '../components/Action'
 import { MainContainer } from '../styles'
+import ImageAndText from '../components/ImageAndText'
 
 export default function Home() {
   return (
     <>
       <Metadata />
-      <MainContainer>
+      <main>
         <Hero />
-        <Title title="can't find the right score for your film?" />
-        <Featured />
-        <PreviousWork />
-        {/* <Plan /> */}
-        {/* <Title title="get a score that fits perfectly with your film" /> */}
-        {/* <Action /> */}
-      </MainContainer>
+        <MainContainer>
+          <Featured />
+          <ImageAndText
+            src='/video-1.png'
+            title='About the composer'
+            text='Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede'
+            btn='get in touch'
+          />
+          <Portfolio />
+          <ImageAndText
+            src='/video-1.png'
+            title='A score that fits your needs'
+            text='Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede'
+            btn='get in touch'
+          />
+        </MainContainer>
+      </main>
+      <footer />
     </>
   )
 }

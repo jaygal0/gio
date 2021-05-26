@@ -1,7 +1,20 @@
+// Place desktop font-size here
+const deskH1 = 6.4
+const deskH2 = 4
+const deskH3 = 2.4
+const body = 1.6
+const meta = 5
+const button = 5
+
+// Place phone font-size here
+const phoneH1 = 6.4
+const phoneH2 = 4
+const phoneH3 = 2.4
+
 export default {
   color: {
     yellow: '#EAED45',
-    green: '#28786D',
+    orange: '#ED8B45',
     lightGreen: '#68C4B8',
     black: '#1C1C1C',
     white: '#FFFFFF',
@@ -9,60 +22,37 @@ export default {
     line: '#E5E5E5',
   },
   font: {
-    phone: {
-      h1: '8rem',
-      h1Medium: '7.2rem',
-      h2: '3.2rem',
-      h3: '4.8rem',
-      h4: '2.4rem',
-      h5: '3.2rem',
-      p: '1.6rem',
-      meta: '1.2rem',
-    },
     desktop: {
-      h1: '6.4rem',
-      h2: '4rem',
-      h3: '2.4rem',
-      h4: '3.6rem',
-      h5: '2.4rem',
-      h6: '1.6rem',
-      p: '1.6rem',
-      meta: '1.2rem',
+      h1: `${deskH1}rem`,
+      h2: `${deskH2}rem`,
+      h3: `${deskH3}rem`,
+      p: `${body}rem`,
+      meta: `${meta}rem`,
+    },
+    phone: {
+      h1: `${phoneH1}rem`,
+      h2: `${phoneH2}rem`,
+      h3: `${phoneH3}rem`,
+    },
+  },
+  lineHeight: {
+    desktop: {
+      h1: `${deskH1 + 0.8}rem`,
+      h2: `${deskH2 + 0.8}rem`,
+      h3: `${deskH3 + 0.8}rem`,
+      p: `${body + 0.8}rem`,
+      meta: `${meta + 0.4}rem`,
+    },
+    phone: {
+      h1: `${phoneH1 + 0.8}rem`,
+      h2: `${phoneH2 + 0.8}rem`,
+      h3: `${phoneH3 + 0.8}rem`,
     },
   },
   letterSpacing: {
     p: '0.05rem',
   },
-  lineHeight: {
-    phone: {
-      h1: '7.2',
-      h1Medium: '8rem',
-      h2: '4rem',
-      h3: '5.6rem',
-      h4: '2.4rem',
-      h5: '5.6rem',
-      p: '2.4rem',
-      meta: '2rem',
-    },
-    desktop: {
-      h1: '7.2rem',
-      h2: '4.8rem',
-      h3: '3.2rem',
-      h4: '4rem',
-      h5: '3.2rem',
-      h6: '2.4rem',
-      p: '2.4rem',
-      meta: '2rem',
-    },
-  },
-  transition: {
-    nav: 'all 0.3s ease-in-out',
-    link: 'all 0.2s ease-in-out',
-    buttons: 'all 0.5s ease-in',
-    images: 'all .2s ease-in-out',
-    scrollAppear: 'all .2s ease-in-out',
-    scrollDisappear: 'all .1s ease-out',
-  },
+  transition: {},
   margin: {
     desktop: {
       top: '1.6rem',

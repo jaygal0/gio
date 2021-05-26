@@ -4,13 +4,15 @@ import { Container } from '../styles'
 import styled from 'styled-components'
 
 const Wrapper = styled.div`
-  grid-column: 4 / span 6;
+  grid-column: 3 / span 8;
   padding: 3.2rem 0.8rem;
   background: hsl(0, 0%, 100%, 0.1);
   border-radius: 1.6rem;
 `
 const Title = styled.h3`
-  margin-left: 1.6rem;
+justify-content: center;
+align-content: center;
+text-align: center;
 `
 const LogoWrapper = styled.div`
   display: flex;
@@ -25,7 +27,7 @@ const Featured = () => {
   return (
     <Container>
       <Wrapper>
-        <Title>featured in</Title>
+        <Title>Featured in</Title>
         <LogoWrapper>
           <ImageWrapper>
             <Image src="/score-the-world.png" width={425.48} height={55.65} />

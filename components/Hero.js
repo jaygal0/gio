@@ -7,19 +7,19 @@ const HeroContainer = styled.section`
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-column-gap: 3.2rem;
-  margin: 0 1.6rem 9.6rem 1.6rem;
+  padding: 0 1.6rem;
   background-image: url('mixer.jpg');
   background-position: 50% 55%;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
 `
 const LogoWrapper = styled.div`
-  grid-column: 4 / span 6;
-  margin-top: 9.6rem;
+  grid-column: 3 / span 1;
+  margin-top: 6.4rem;
 `
 const TitleWrapper = styled.div`
-  grid-column: 4 / span 6;
-  margin-bottom: 40vh;
+  grid-column: 3 / span 6;
 `
 
 const Hero = () => {

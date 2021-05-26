@@ -5,14 +5,14 @@ const Metadata = ({ title, desc }) => {
   return (
     <Head>
       <title>G-Orchestra</title>
-      <link rel="icon" href="/logo.svg" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link rel='icon' href='/logo.svg' />
+      <link rel='preconnect' href='https://fonts.gstatic.com' />
       <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=Libre+Barcode+39&family=Lora&display=swap"
-        rel="stylesheet"
+        href='https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=Nunito:wght@800&display=swap'
+        rel='stylesheet'
       />
-      <meta name="description" content={desc} />
-      <meta name="robots" content="index, follow" />
+      <meta name='description' content={desc} />
+      <meta name='robots' content='index, follow' />
     </Head>
   )
 }
