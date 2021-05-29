@@ -1,0 +1,8 @@
+- [x] Add text
+- [x] Link CTA's
+- [ ] Create navigation
+- [ ] Share with Giovi
+- [ ] Update featured in
+- [ ] Add images
+- [ ] Responsive design
+- [ ] Upload to Next.js and share

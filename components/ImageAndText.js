@@ -6,6 +6,7 @@ import Image from 'next/image'
 
 const TextWrapper = styled.div`
   grid-column: 5 / span 4;
+  padding: 12rem 0;
 `
 
 const Wrapper = styled.div`
@@ -25,7 +26,7 @@ const ImgWrapper = styled.div`
   margin-right: 3.2rem;
 `
 
-const ImageAndText = ({ src, title, text, btn }) => {
+const ImageAndText = ({ src, title, text, btn, link }) => {
   return (
     <Container>
       <Wrapper>
@@ -35,7 +36,7 @@ const ImageAndText = ({ src, title, text, btn }) => {
         <TextWrapper>
           <h2>{title}</h2>
           <p>{text}</p>
-          <Button desc={btn} />
+          <Button desc={btn} link={link} />
         </TextWrapper>
       </Wrapper>
     </Container>

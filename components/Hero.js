@@ -12,6 +12,7 @@ const HeroContainer = styled.section`
   background-position: 50% 55%;
   background-repeat: no-repeat;
   background-size: cover;
+  max-width: 204.8rem;
   height: 100vh;
 `
 const LogoWrapper = styled.div`
@@ -26,14 +27,11 @@ const Hero = () => {
   return (
     <HeroContainer>
       <LogoWrapper>
-        <Image src="/logo.svg" width={96} height={96} />
+        <Image src='/logo.svg' width={96} height={96} />
       </LogoWrapper>
       <TitleWrapper>
-        <h1>looking for the perfect score?</h1>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos,
-          voluptates quaerat voluptatem nisi delectus architecto.
-        </p>
+        <h1>Looking for the perfect score?</h1>
+        <h3>Tailor made music, suitable for all types of media.</h3>
       </TitleWrapper>
     </HeroContainer>
   )

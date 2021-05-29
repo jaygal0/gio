@@ -25,6 +25,7 @@ h1 {
   line-height: ${({ theme }) => theme.lineHeight.desktop.h1};
   font-weight: 700;
   margin-bottom: 1.6rem;
+  color: ${({ theme }) => theme.color.yellow};
 
   @media screen and (max-width: ${({ theme }) => theme.breakPoint.phoneLarge}) {
   font-size: ${({ theme }) => theme.font.phone.h1};
@@ -70,6 +71,11 @@ p {
   margin-bottom: ${({ theme }) => theme.margin.desktop.bottom};
 }
 
+ul, li {
+  font-size: ${({ theme }) => theme.font.desktop.p};
+  line-height: ${({ theme }) => theme.lineHeight.desktop.p};
+}
+
 button {
   font-family: 'Nunito', sans-serif;
   text-transform: uppercase;
@@ -80,7 +86,7 @@ button {
 }
 
 footer {
-  margin-top: 9.6rem;
+  margin-top: calc(9.6rem * 3);
 }
 
 `

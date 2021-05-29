@@ -1,5 +1,5 @@
 // Place desktop font-size here
-const deskH1 = 6.4
+const deskH1 = 7.2
 const deskH2 = 4
 const deskH3 = 2.4
 const body = 1.6
