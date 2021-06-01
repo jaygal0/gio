@@ -1,6 +1,7 @@
 - [x] Add text
 - [x] Link CTA's
-- [ ] Create navigation
+- [x] Create navigation
+- [ ] Sort out anchor links
 - [ ] Share with Giovi
 - [ ] Update featured in
 - [ ] Add images
