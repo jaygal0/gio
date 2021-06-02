@@ -16,13 +16,14 @@ export default function Home() {
         <MainContainer>
           <Featured />
           <ImageAndText
+            path='about'
             src='/gio.jpg'
             title='About the composer'
             text='Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede'
             btn='get in touch'
             link='mailto:hi@joshuagalinato.com'
           />
-          <Portfolio />
+          <Portfolio path='portfolio' />
           <ImageAndText
             src='/production.jpg'
             title='A score that fits your needs'

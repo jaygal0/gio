@@ -1,6 +1,6 @@
 import React from 'react'
-import Button from './Button'
 import styled from 'styled-components'
+import { Link } from 'react-scroll'
 
 const Header = styled.header`
   position: absolute;
@@ -36,21 +36,16 @@ const CTA = styled.li`
   color: ${({ theme }) => theme.color.black};
 `
 
-const Link = styled.a`
-  text-decoration: none;
-  color: white;
-`
-
 const Nav = () => {
   return (
     <Header>
       <Navigation>
         <Unlisted>
-          <Link href='#'>
+          <Link to='about' smooth={true} duration={1000} offset={-50}>
             <Listed>about</Listed>
           </Link>
 
-          <Link href='#'>
+          <Link to='portfolio' smooth={true} duration={1000} offset={-50}>
             <Listed>portfolio</Listed>
           </Link>
           <Link href='mailto:hi@joshuagalinato.com'>

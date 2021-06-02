@@ -1,8 +1,9 @@
 - [x] Add text
 - [x] Link CTA's
 - [x] Create navigation
-- [ ] Sort out anchor links
-- [ ] Share with Giovi
+- [x] Sort out anchor links
+- [x] Share with Giovi
+- [ ] Design logo ?
 - [ ] Update featured in
 - [ ] Add images
 - [ ] Responsive design

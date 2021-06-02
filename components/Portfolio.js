@@ -24,14 +24,14 @@ const PlayButton = styled.img`
   transform: translate(-50%, -50%);
 `
 
-const PreviousWork = () => {
+const PreviousWork = ({ path }) => {
   const [vid1, setVid1] = useState(false)
   const [vid2, setVid2] = useState(false)
   const [vid3, setVid3] = useState(false)
   const [vid4, setVid4] = useState(false)
 
   return (
-    <Container>
+    <Container id={path}>
       <Wrapper>
         <h2>Portfolio</h2>
         <VideoWrapper>

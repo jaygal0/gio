@@ -26,9 +26,9 @@ const ImgWrapper = styled.div`
   margin-right: 3.2rem;
 `
 
-const ImageAndText = ({ src, title, text, btn, link }) => {
+const ImageAndText = ({ path, src, title, text, btn, link }) => {
   return (
-    <Container>
+    <Container id={path}>
       <Wrapper>
         <ImgWrapper>
           <Image src={src} layout='fill' objectFit='cover' />

@@ -89,5 +89,14 @@ footer {
   margin-top: calc(9.6rem * 3);
 }
 
+a {
+  text-decoration: none;
+  color: white;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
 `
 export default GlobalStyle
