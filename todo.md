@@ -3,8 +3,7 @@
 - [x] Create navigation
 - [x] Sort out anchor links
 - [x] Share with Giovi
+- [ ] Responsive design
 - [ ] Design logo ?
 - [ ] Update featured in
 - [ ] Add images
-- [ ] Responsive design
-- [ ] Upload to Next.js and share

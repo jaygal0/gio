@@ -1,7 +1,5 @@
-import Image from 'next/image'
 import React from 'react'
 import styled from 'styled-components'
-import { Container } from '../styles'
 
 const HeroContainer = styled.section`
   display: grid;
@@ -14,21 +12,29 @@ const HeroContainer = styled.section`
   background-size: cover;
   max-width: 204.8rem;
   height: 100vh;
+  align-content: center;
+
+  @media screen and (max-width: ${({ theme }) =>
+      theme.breakPoint.phoneMedium}) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, min-content);
+    column-gap: 1.6rem;
+    height: 80vh;
+  }
 `
-const LogoWrapper = styled.div`
-  grid-column: 3 / span 1;
-  margin-top: 6.4rem;
-`
+
 const TitleWrapper = styled.div`
   grid-column: 3 / span 6;
+
+  @media screen and (max-width: ${({ theme }) =>
+      theme.breakPoint.phoneMedium}) {
+    grid-column: 1 / span 4;
+  }
 `
 
 const Hero = () => {
   return (
     <HeroContainer>
-      <LogoWrapper>
-        <Image src='/logo.svg' width={96} height={96} />
-      </LogoWrapper>
       <TitleWrapper>
         <h1>Looking for the perfect score?</h1>
         <h3>Tailor made music, suitable for all types of media.</h3>

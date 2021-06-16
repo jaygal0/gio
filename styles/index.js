@@ -9,22 +9,24 @@ export const MainContainer = styled.div`
   @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
     margin-bottom: 4.8rem;
   }
-  @media screen and (max-width: ${({ theme }) => theme.breakPoint.phone}) {
+  @media screen and (max-width: ${({ theme }) =>
+      theme.breakPoint.phoneMedium}) {
   }
 `
 export const Container = styled.section`
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-column-gap: 3.2rem;
+  column-gap: 3.2rem;
   margin-top: 6rem;
 
   @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
-    grid-column-gap: 3.2rem;
+    column-gap: 3.2rem;
   }
-  @media screen and (max-width: ${({ theme }) => theme.breakPoint.phone}) {
+  @media screen and (max-width: ${({ theme }) =>
+      theme.breakPoint.phoneMedium}) {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, min-content);
-    grid-column-gap: 1.6rem;
+    column-gap: 1.6rem;
     margin-bottom: 4.8rem;
   }
 `
@@ -40,9 +42,10 @@ export const HeroGridContainer = styled.section`
     grid-template-rows: repeat(2, min-content);
     grid-column-gap: 3.2rem;
   }
-  @media screen and (max-width: ${({ theme }) => theme.breakPoint.phone}) {
+  @media screen and (max-width: ${({ theme }) =>
+      theme.breakPoint.phoneMedium}) {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, min-content);
-    grid-column-gap: 1.6rem;
+    column-gap: 1.6rem;
   }
 `

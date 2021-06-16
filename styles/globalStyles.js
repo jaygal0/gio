@@ -86,7 +86,12 @@ button {
 }
 
 footer {
-  margin-top: calc(9.6rem * 3);
+  margin-top: calc(9.6rem * 2);
+
+  @media screen and (max-width: ${({ theme }) =>
+    theme.breakPoint.phoneMedium}) {
+  margin-top: calc(9.6rem * 1);
+  }
 }
 
 a {

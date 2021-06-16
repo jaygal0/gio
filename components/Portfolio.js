@@ -6,15 +6,30 @@ import styled from 'styled-components'
 
 const Wrapper = styled.div`
   grid-column: 3 / span 8;
+
+  @media screen and (max-width: ${({ theme }) =>
+      theme.breakPoint.phoneMedium}) {
+    grid-column: 1 / -1;
+  }
 `
 const VideoWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 3.2rem;
+
+  @media screen and (max-width: ${({ theme }) =>
+      theme.breakPoint.phoneMedium}) {
+    flex-direction: column;
+  }
 `
 const ImageWrapper = styled.div`
   width: calc(51.7% - 3.2rem);
   position: relative;
+
+  @media screen and (max-width: ${({ theme }) =>
+      theme.breakPoint.phoneMedium}) {
+    width: 100%;
+  }
 `
 const PlayButton = styled.img`
   z-index: 1;

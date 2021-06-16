@@ -8,15 +8,24 @@ const Wrapper = styled.div`
   padding: 3.2rem 0.8rem;
   background: hsl(0, 0%, 100%, 0.1);
   border-radius: 1.6rem;
+
+  @media screen and (max-width: ${({ theme }) =>
+      theme.breakPoint.phoneMedium}) {
+    grid-column: 1 / -1;
+  }
 `
 const Title = styled.h3`
-justify-content: center;
-align-content: center;
-text-align: center;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
 `
 const LogoWrapper = styled.div`
   display: flex;
   align-items: center;
+  @media screen and (max-width: ${({ theme }) =>
+      theme.breakPoint.phoneMedium}) {
+    flex-direction: column;
+  }
 `
 
 const ImageWrapper = styled.div`
@@ -30,10 +39,10 @@ const Featured = () => {
         <Title>Featured in</Title>
         <LogoWrapper>
           <ImageWrapper>
-            <Image src="/score-the-world.png" width={425.48} height={55.65} />
+            <Image src='/score-the-world.png' width={425.48} height={55.65} />
           </ImageWrapper>
           <ImageWrapper>
-            <Image src="/scorelief.png" width={430.87} height={102.33} />
+            <Image src='/scorelief.png' width={430.87} height={102.33} />
           </ImageWrapper>
         </LogoWrapper>
       </Wrapper>
