@@ -3,7 +3,8 @@
 - [x] Create navigation
 - [x] Sort out anchor links
 - [x] Share with Giovi
-- [ ] Responsive design
-- [ ] Design logo ?
+- [x] Responsive design
+- [x] Design logo ?
+- [ ] Tablet response
 - [ ] Update featured in
 - [ ] Add images

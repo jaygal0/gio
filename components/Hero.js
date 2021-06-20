@@ -6,20 +6,23 @@ const HeroContainer = styled.section`
   grid-template-columns: repeat(12, 1fr);
   grid-column-gap: 3.2rem;
   padding: 0 1.6rem;
-  background-image: url('mixer.jpg');
-  background-position: 50% 55%;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: linear-gradient(
+      136deg,
+      hsla(348, 97%, 63%, 0.65),
+      hsla(230, 96%, 62%, 0.65)
+    ),
+    url('mixer.jpg') no-repeat 50% 55% / cover;
   max-width: 204.8rem;
   height: 100vh;
   align-content: center;
+  color: #ffff;
 
   @media screen and (max-width: ${({ theme }) =>
       theme.breakPoint.phoneMedium}) {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, min-content);
     column-gap: 1.6rem;
-    height: 80vh;
+    height: 85vh;
   }
 `
 

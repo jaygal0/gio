@@ -4,7 +4,7 @@ import Head from 'next/head'
 const Metadata = ({ title, desc }) => {
   return (
     <Head>
-      <title>G-Orchestra</title>
+      <title>Giovanni Fazzolari | Music Production</title>
       <link rel='icon' href='/logo.svg' />
       <link rel='preconnect' href='https://fonts.gstatic.com' />
       <link

@@ -26,7 +26,7 @@ const LogoWrapper = styled.div`
   @media screen and (max-width: ${({ theme }) =>
       theme.breakPoint.phoneMedium}) {
     grid-column: 1 / span 1;
-    margin-top: 1.6rem;
+    margin-top: 3.2rem;
   }
 `
 const Navigation = styled.nav`
@@ -89,26 +89,32 @@ const CTA = styled.li`
   }
 `
 const CloseButton = styled.div`
-  position: absolute;
-  top: 1.6rem;
-  right: 1.6rem;
-  z-index: 5;
+  display: none;
+
+  @media screen and (max-width: ${({ theme }) =>
+      theme.breakPoint.phoneMedium}) {
+    display: block;
+    position: absolute;
+    top: 1.6rem;
+    right: 1.6rem;
+    z-index: 5;
+  }
 `
 
 const Hamburger = styled.div`
+  display: none;
+
   @media screen and (max-width: ${({ theme }) =>
       theme.breakPoint.phoneMedium}) {
+    display: block;
     grid-column: 4 / span 1;
     margin-top: 1.6rem;
     align-items: center;
   }
 `
-
 const Nav = () => {
   const [sidebar, setSidebar] = useState(true)
   const showSidebar = () => setSidebar(!sidebar)
-
-  // FIXME: Sort out this functionality
 
   return (
     <Header>
