@@ -3,14 +3,6 @@ import Image from 'next/image'
 import { Container } from '../styles'
 import styled from 'styled-components'
 
-// TODO: Giovi send featured in logos
-// TODO: Giovi send copy for 'About us'
-// TODO: Giovi send photo of himself or from Unsplash.com
-// TODO: Giovi Finalise the 4/6 best videos/soundcloud and provide all the links and images for them
-// TODO: Josh add text to the bottom of the videos
-// TODO: Josh look into embedding Soundcloud files
-// TODO: Josh Send Giovi GF Logos
-
 const Wrapper = styled.div`
   grid-column: 3 / span 8;
   padding: 3.2rem 0.8rem;
