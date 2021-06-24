@@ -79,13 +79,20 @@ const Listed = styled.li`
 const CTA = styled.li`
   list-style: none;
   background: ${({ theme }) => theme.color.orange};
-  padding: 0.8rem 2.4rem;
+  padding: 0.8rem 6.4rem;
   border-radius: 0.5rem;
   color: ${({ theme }) => theme.color.black};
+  font-family: 'Nunito', sans-serif;
+  text-transform: uppercase;
 
   @media screen and (max-width: ${({ theme }) =>
       theme.breakPoint.phoneMedium}) {
     margin: 6.4rem 0;
+  }
+
+  &:hover {
+    cursor: pointer;
+    filter: brightness(110%);
   }
 `
 const CloseButton = styled.div`
@@ -130,9 +137,9 @@ const Nav = () => {
           <Link to='portfolio' smooth={true} duration={1000} offset={-50}>
             <Listed onClick={showSidebar}>portfolio</Listed>
           </Link>
-          <Link href='mailto:hi@joshuagalinato.com'>
+          <a href='mailto:hi@google.com'>
             <CTA onClick={showSidebar}>get in touch</CTA>
-          </Link>
+          </a>
         </Unlisted>
         <CloseButton>
           <Image

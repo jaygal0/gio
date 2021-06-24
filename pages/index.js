@@ -8,10 +8,7 @@ import Nav from '../components/Nav'
 
 // TODO: Giovi send copy for 'About us'
 // TODO: Giovi send photo of himself or from Unsplash.com
-// TODO: Josh add text to the bottom of the videos
-// TODO: Josh look into embedding Soundcloud files
-// TODO: Josh Send Giovi GF Logos
-// FIXME: Nav "Get In Touch"
+// TODO: Josh look into embedding Soundcloud files ??
 
 export default function Home() {
   return (

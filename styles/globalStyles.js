@@ -83,6 +83,11 @@ button {
   line-height: ${({ theme }) => theme.lineHeight.desktop.p};
   outline: none;
   border: none;
+  
+  &:hover {
+    cursor: pointer;
+    filter: brightness(110%);
+  }
 }
 
 footer {
@@ -102,6 +107,5 @@ a {
     cursor: pointer;
   }
 }
-
 `
 export default GlobalStyle
