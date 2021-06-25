@@ -64,7 +64,7 @@ export default {
     desktopSmall: '1024px',
     tablet: '768px',
     phoneLarge: '426px',
-    phoneMedium: '376px',
+    phoneMedium: '426px',
     phoneSmall: '321px',
   },
 }

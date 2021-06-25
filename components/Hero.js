@@ -16,19 +16,22 @@ const HeroContainer = styled.section`
   height: 100vh;
   align-content: center;
   color: #ffff;
+  margin: 0 auto;
 
   @media screen and (max-width: ${({ theme }) =>
       theme.breakPoint.phoneMedium}) {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, min-content);
     column-gap: 1.6rem;
-    height: 85vh;
   }
 `
 
 const TitleWrapper = styled.div`
   grid-column: 3 / span 6;
 
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
+    grid-column: 3 / span 8;
+  }
   @media screen and (max-width: ${({ theme }) =>
       theme.breakPoint.phoneMedium}) {
     grid-column: 1 / span 4;

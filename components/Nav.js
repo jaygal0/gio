@@ -21,7 +21,7 @@ const Header = styled.header`
   }
 `
 const LogoWrapper = styled.div`
-  grid-column: 3 / span 1;
+  grid-column: 2 / span 1;
 
   @media screen and (max-width: ${({ theme }) =>
       theme.breakPoint.phoneMedium}) {
@@ -30,7 +30,7 @@ const LogoWrapper = styled.div`
   }
 `
 const Navigation = styled.nav`
-  grid-column: 6 / span 5;
+  grid-column: 6 / span 6;
 
   @media screen and (max-width: ${({ theme }) =>
       theme.breakPoint.phoneMedium}) {
@@ -69,7 +69,7 @@ const Unlisted = styled.ul`
 `
 const Listed = styled.li`
   list-style: none;
-  color: ${({ theme }) => theme.color.yellow};
+  color: ${({ theme }) => theme.color.white};
 
   @media screen and (max-width: ${({ theme }) =>
       theme.breakPoint.phoneMedium}) {
@@ -79,7 +79,7 @@ const Listed = styled.li`
 const CTA = styled.li`
   list-style: none;
   background: ${({ theme }) => theme.color.orange};
-  padding: 0.8rem 6.4rem;
+  padding: 0.8rem 3.2rem;
   border-radius: 0.5rem;
   color: ${({ theme }) => theme.color.black};
   font-family: 'Nunito', sans-serif;

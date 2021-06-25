@@ -74,6 +74,8 @@ p {
 ul, li {
   font-size: ${({ theme }) => theme.font.desktop.p};
   line-height: ${({ theme }) => theme.lineHeight.desktop.p};
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 button {

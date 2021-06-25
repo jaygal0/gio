@@ -82,9 +82,7 @@ const PreviousWork = ({ path }) => {
             {/* Lightbox area start */}
             <FsLightbox
               toggler={vid1}
-              sources={[
-                'https://www.youtube.com/watch?v=Z3_jhEHeadingcoc&ab_channel=G-Orchestra',
-              ]}
+              sources={['https://www.youtube.com/watch?v=Z3_jhEh3coc']}
             />
             <FsLightbox
               toggler={vid2}
