@@ -3,6 +3,9 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-scroll'
 
+// TODO: Check website on Siara's phone & computer
+// TODO: Redesign logo
+
 const Header = styled.header`
   position: absolute;
   width: 100%;
@@ -11,13 +14,13 @@ const Header = styled.header`
   grid-template-columns: repeat(12, 1fr);
   grid-column-gap: 3.2rem;
   padding: 0 1.6rem;
-  max-width: 204.8rem;
   margin-top: 9.6rem;
 
   @media screen and (max-width: ${({ theme }) =>
       theme.breakPoint.phoneMedium}) {
     grid-template-columns: repeat(4, 1fr);
     margin-top: 0rem;
+    z-index: 9;
   }
 `
 const LogoWrapper = styled.div`
@@ -43,13 +46,15 @@ const Navigation = styled.nav`
 
     &.hideMenu {
       transition: 0.3s all ease-in-out;
-      transform: translateX(-100%);
+      transform: translateX(-120%);
       z-index: 2;
     }
     &.showMenu {
       transition: 0.3s all ease-in-out;
       transform: translateX(0);
-      z-index: 2;
+      z-index: 10;
+      position: fixed;
+      left: 0;
     }
   }
 `

@@ -50,14 +50,15 @@ const Overlay = styled.div`
   }
 `
 const PlayButton = styled.img`
-  z-index: 2;
+  z-index: 1;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 
-  &:hover {
-    color: blue;
+  @media screen and (max-width: ${({ theme }) =>
+      theme.breakPoint.phoneMedium}) {
+    z-index: 0;
   }
 `
 const Heading = styled.h3`

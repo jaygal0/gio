@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
+import Nav from './Nav'
 
-const HeroContainer = styled.section`
+const HeroContainer = styled.header`
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-column-gap: 3.2rem;
