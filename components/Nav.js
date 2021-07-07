@@ -5,7 +5,6 @@ import { Link } from 'react-scroll'
 
 // TODO: Check website on Siara's phone & computer
 // TODO: Redesign logo
-// FIXME: Fix the navbar at 4k
 
 const Header = styled.header`
   position: absolute;
@@ -36,8 +35,12 @@ const LogoWrapper = styled.div`
 const Navigation = styled.nav`
   grid-column: 6 / span 6;
 
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
+    grid-column: 4 / span 8;
+  }
   @media screen and (max-width: ${({ theme }) =>
       theme.breakPoint.phoneMedium}) {
+    grid-column: 6 / span 6;
     position: absolute;
     background: black;
     height: 100vh;

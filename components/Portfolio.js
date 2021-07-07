@@ -5,7 +5,7 @@ import { Container } from '../styles'
 import styled from 'styled-components'
 
 const Wrapper = styled.div`
-  grid-column: 3 / span 8;
+  grid-column: 2 / span 10;
 
   @media screen and (max-width: ${({ theme }) =>
       theme.breakPoint.phoneMedium}) {
@@ -23,7 +23,7 @@ const VideoWrapper = styled.div`
   }
 `
 const TextWrapper = styled.div`
-  width: calc(51.7% - 3.2rem);
+  width: calc(50% - 3.2rem);
   position: relative;
 
   @media screen and (max-width: ${({ theme }) =>
@@ -34,12 +34,11 @@ const TextWrapper = styled.div`
 const ImgWrapper = styled.div`
   position: relative;
   width: 100%;
-  height: 25rem;
-  overflow: hidden;
+  height: 33rem;
 
   @media screen and (max-width: ${({ theme }) =>
       theme.breakPoint.desktopSmall}) {
-    height: 40rem;
+    height: 45rem;
   }
   @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
     height: 30rem;

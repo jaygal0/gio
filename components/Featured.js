@@ -4,7 +4,7 @@ import { Container } from '../styles'
 import styled from 'styled-components'
 
 const Wrapper = styled.div`
-  grid-column: 3 / span 8;
+  grid-column: 2 / span 10;
   padding: 3.2rem 0.8rem;
   background: hsl(0, 0%, 100%, 0.1);
   border-radius: 1.6rem;

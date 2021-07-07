@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Nav from './Nav'
 
-const HeroContainer = styled.header`
+const HeroContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-column-gap: 3.2rem;
@@ -13,7 +13,7 @@ const HeroContainer = styled.header`
       hsla(230, 96%, 62%, 0.65)
     ),
     url('mixer.jpg') no-repeat 50% 55% / cover;
-  max-width: 204.8rem;
+  max-width: 254.8rem;
   height: 100vh;
   align-content: center;
   color: #ffff;

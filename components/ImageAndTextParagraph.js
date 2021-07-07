@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 const Wrapper = styled.div`
   display: flex;
-  grid-column: 3 / span 8;
+  grid-column: 2 / span 10;
   align-items: center;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
@@ -36,7 +36,7 @@ const ImgWrapper = styled.div`
       theme.breakPoint.desktopSmall}) {
     grid-column: 1 / -1;
     grid-row: 1;
-    height: 45rem;
+    height: 55rem;
   }
 
   @media screen and (max-width: ${({ theme }) =>
