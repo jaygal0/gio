@@ -18,25 +18,34 @@ const VideoWrapper = styled.div`
   gap: 3.2rem;
 
   @media screen and (max-width: ${({ theme }) =>
-      theme.breakPoint.phoneMedium}) {
+      theme.breakPoint.desktopSmall}) {
     flex-direction: column;
   }
 `
-
 const TextWrapper = styled.div`
   width: calc(51.7% - 3.2rem);
   position: relative;
 
   @media screen and (max-width: ${({ theme }) =>
-      theme.breakPoint.phoneMedium}) {
+      theme.breakPoint.desktopSmall}) {
     width: 100%;
   }
 `
 const ImgWrapper = styled.div`
   position: relative;
   width: 100%;
+  height: 25rem;
   overflow: hidden;
+
+  @media screen and (max-width: ${({ theme }) =>
+      theme.breakPoint.desktopSmall}) {
+    height: 40rem;
+  }
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
+    height: 30rem;
+  }
 `
+
 const Overlay = styled.div`
   position: absolute;
   width: 100%;
@@ -117,14 +126,14 @@ const PreviousWork = ({ path }) => {
             {/* Image 1 start */}
             <ImgWrapper>
               <Overlay onClick={() => setVid1(!vid1)} />
-              <Image src='/spring.png' width={448} height={268.8} />
+              <Image src='/spring.jpg' layout='fill' objectFit='cover' />
               <PlayButton
                 onClick={() => setVid1(!vid1)}
                 src='/play-button.svg'
               />
             </ImgWrapper>
             <div>
-              <Heading>Heading</Heading>
+              <Heading>Spring</Heading>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet,
                 explicabo. Quasi cum sapiente earum aliquid!
@@ -136,14 +145,14 @@ const PreviousWork = ({ path }) => {
           <TextWrapper>
             <ImgWrapper>
               <Overlay onClick={() => setVid2(!vid2)} />
-              <Image src='/chair.png' width={448} height={268.8} />
+              <Image src='/chair.png' layout='fill' objectFit='cover' />
               <PlayButton
                 onClick={() => setVid2(!vid2)}
                 src='/play-button.svg'
               />
             </ImgWrapper>
             <div>
-              <Heading>Heading</Heading>
+              <Heading>Poulette's Chair</Heading>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet,
                 explicabo. Quasi cum sapiente earum aliquid!
@@ -155,14 +164,14 @@ const PreviousWork = ({ path }) => {
           <TextWrapper>
             <ImgWrapper>
               <Overlay onClick={() => setVid3(!vid3)} />
-              <Image src='/bear-hugs.png' width={448} height={268.8} />
+              <Image src='/bear-hugs.png' layout='fill' objectFit='cover' />
               <PlayButton
                 onClick={() => setVid3(!vid3)}
                 src='/play-button.svg'
               />
             </ImgWrapper>
             <div>
-              <Heading>Heading</Heading>
+              <Heading>Bear Hugs</Heading>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet,
                 explicabo. Quasi cum sapiente earum aliquid!
@@ -174,14 +183,14 @@ const PreviousWork = ({ path }) => {
           <TextWrapper>
             <ImgWrapper>
               <Overlay onClick={() => setVid4(!vid4)} />
-              <Image src='/westworld.png' width={448} height={268.8} />
+              <Image src='/westworld.png' layout='fill' objectFit='cover' />
               <PlayButton
                 onClick={() => setVid4(!vid4)}
                 src='/play-button.svg'
               />
             </ImgWrapper>
             <div>
-              <Heading>Heading</Heading>
+              <Heading>Westworld</Heading>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet,
                 explicabo. Quasi cum sapiente earum aliquid!
@@ -193,14 +202,14 @@ const PreviousWork = ({ path }) => {
           <TextWrapper>
             <ImgWrapper>
               <Overlay onClick={() => setVid5(!vid5)} />
-              <Image src='/civ-jazz.jpg' width={448} height={268.8} />
+              <Image src='/civ-jazz.jpg' layout='fill' objectFit='cover' />
               <PlayButton
                 onClick={() => setVid5(!vid5)}
                 src='/play-button.svg'
               />
             </ImgWrapper>
             <div>
-              <Heading>Heading</Heading>
+              <Heading>Civilization VI: Hungarian Jazz</Heading>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
                 id corporis illo ullam quod dolore!
@@ -212,14 +221,14 @@ const PreviousWork = ({ path }) => {
           <TextWrapper>
             <ImgWrapper>
               <Overlay onClick={() => setVid6(!vid6)} />
-              <Image src='/civ-thumb.jpg' width={448} height={268.8} />
+              <Image src='/civ-thumb.jpg' layout='fill' objectFit='cover' />
               <PlayButton
                 onClick={() => setVid6(!vid6)}
                 src='/play-button.svg'
               />
             </ImgWrapper>
             <div>
-              <Heading>Heading</Heading>
+              <Heading>Civilization VI: Incan Jazz</Heading>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Molestias voluptatum dolorum inventore? Odit, sint quis.

@@ -5,6 +5,7 @@ import { Link } from 'react-scroll'
 
 // TODO: Check website on Siara's phone & computer
 // TODO: Redesign logo
+// FIXME: Fix the navbar at 4k
 
 const Header = styled.header`
   position: absolute;

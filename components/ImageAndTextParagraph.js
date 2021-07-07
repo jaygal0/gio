@@ -36,7 +36,7 @@ const ImgWrapper = styled.div`
       theme.breakPoint.desktopSmall}) {
     grid-column: 1 / -1;
     grid-row: 1;
-    height: 40rem;
+    height: 45rem;
   }
 
   @media screen and (max-width: ${({ theme }) =>
@@ -65,7 +65,17 @@ const TextWrapper = styled.div`
   }
 `
 
-const ImageAndText = ({ path, src, title, text, btn, link }) => {
+const ImageAndTextParagraph = ({
+  path,
+  src,
+  title,
+  p1,
+  p2,
+  p3,
+  p4,
+  btn,
+  link,
+}) => {
   return (
     <Container id={path}>
       <Wrapper>
@@ -74,7 +84,8 @@ const ImageAndText = ({ path, src, title, text, btn, link }) => {
         </ImgWrapper>
         <TextWrapper>
           <h2>{title}</h2>
-          <p>{text}</p>
+          <p>{p1}</p>
+          <p>{p2}</p>
           <Button desc={btn} link={link} />
         </TextWrapper>
       </Wrapper>
@@ -82,4 +93,4 @@ const ImageAndText = ({ path, src, title, text, btn, link }) => {
   )
 }
 
-export default ImageAndText
+export default ImageAndTextParagraph
