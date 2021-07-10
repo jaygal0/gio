@@ -145,7 +145,7 @@ const Nav = () => {
           <Link to='portfolio' smooth={true} duration={1000} offset={-50}>
             <Listed onClick={showSidebar}>portfolio</Listed>
           </Link>
-          <a href='mailto:hi@google.com'>
+          <a href='mailto:gorchestral@gmail.com'>
             <CTA onClick={showSidebar}>get in touch</CTA>
           </a>
         </Unlisted>
