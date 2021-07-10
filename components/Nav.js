@@ -3,7 +3,6 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-scroll'
 
-// TODO: Check website on Siara's phone & computer
 // TODO: Redesign logo
 
 const Header = styled.header`

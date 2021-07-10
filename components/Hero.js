@@ -9,8 +9,8 @@ const HeroContainer = styled.div`
   padding: 0 1.6rem;
   background: linear-gradient(
       136deg,
-      hsla(348, 97%, 63%, 0.65),
-      hsla(230, 96%, 62%, 0.65)
+      hsla(348, 97%, 63%, 0.2),
+      hsla(230, 96%, 62%, 0.2)
     ),
     url('mixer.jpg') no-repeat 50% 55% / cover;
   max-width: 254.8rem;

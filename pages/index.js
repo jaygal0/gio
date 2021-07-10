@@ -7,10 +7,6 @@ import ImageAndText from '../components/ImageAndText'
 import ImageAndTextParagraph from '../components/ImageAndTextParagraph'
 import Nav from '../components/Nav'
 
-// TODO: Giovi send copy for 'About us'
-// TODO: Giovi send photo of himself or from Unsplash.com
-// TODO: Josh look into embedding Soundcloud files ??
-
 export default function Home() {
   return (
     <>

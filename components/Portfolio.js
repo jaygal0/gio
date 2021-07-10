@@ -134,8 +134,9 @@ const PreviousWork = ({ path }) => {
             <div>
               <Heading>Spring</Heading>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet,
-                explicabo. Quasi cum sapiente earum aliquid!
+                A young girl and her faithful companion have entered an ancient,
+                frozen forest to perform the traditional rites to initiate the
+                arrival of Spring.
               </p>
             </div>
           </TextWrapper>
@@ -153,8 +154,8 @@ const PreviousWork = ({ path }) => {
             <div>
               <Heading>Poulette's Chair</Heading>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet,
-                explicabo. Quasi cum sapiente earum aliquid!
+                An enchanting story of the friendship between a shy, precocious
+                young girl; Poulette, and her magical chair.
               </p>
             </div>
           </TextWrapper>
@@ -172,8 +173,9 @@ const PreviousWork = ({ path }) => {
             <div>
               <Heading>Bear Hugs</Heading>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet,
-                explicabo. Quasi cum sapiente earum aliquid!
+                Teddy Bear Stitch attends a nightly support group for toy
+                survivors of trauma in this dark, thought-provoking short film
+                by Nick McLean.
               </p>
             </div>
           </TextWrapper>
@@ -191,8 +193,8 @@ const PreviousWork = ({ path }) => {
             <div>
               <Heading>Westworld</Heading>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet,
-                explicabo. Quasi cum sapiente earum aliquid!
+                An action-packed cue from HBO’s award-winning dystopian
+                Television series.
               </p>
             </div>
           </TextWrapper>
@@ -210,8 +212,8 @@ const PreviousWork = ({ path }) => {
             <div>
               <Heading>Civilization VI: Hungarian Jazz</Heading>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-                id corporis illo ullam quod dolore!
+                Jazz re-harmonization of Roland Rizzo's 'Hej Dunáról fúj a szél;
+                Cinege, Cinege’.
               </p>
             </div>
           </TextWrapper>
@@ -228,10 +230,7 @@ const PreviousWork = ({ path }) => {
             </ImgWrapper>
             <div>
               <Heading>Civilization VI: Incan Jazz</Heading>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Molestias voluptatum dolorum inventore? Odit, sint quis.
-              </p>
+              <p>Jazz re-harmonization of Roland Rizzo's 'Siempre Macho’.</p>
             </div>
           </TextWrapper>
           {/* Image 6 end */}
